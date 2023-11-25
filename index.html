@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-APP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="time()">
+   <div class="todo-container">
+    <div class="date-hour">
+        <p id="date">Date</p>
+        <p id="hour">Hour</p>
+     </div>
+    <header>
+        <h1>To Do List</h1>
+    </header>
+    <form  id="todo-form">
+        <p>Add your Task here</p>
+        <div class="form-control">
+            <input type="text" id="todo-input" placeholder="Type Your Next Task">
+            <button type="submit">
+                <i class="fa fa-plus"></i>
+            </button>
+        </div>
+     </form>
+     <form  id="edit-form" class="hide">
+        <p>Edit your Task here</p>
+        <div class="form-control">
+            <input type="text" id="edit-input" placeholder="Type Your Next Task">
+          <button type="submit">
+            <i class="fa fa-edit"></i>
+            </button>
+        </div>
+        <button type="button" id="cancel-edit-btn">Cancel</button>
+
+
+
+     </form>
+     <div class="todo-list" id="todo-list">
+     <div class="todo">        
+        <h3>Study</h3>
+        <button class="finish-todo">
+        <i class="fa fa-check"></i>  
+          </button> 
+        <!-- <button class="edit-todo">
+        <i class="fa fa-pen"><i>
+        </button> -->
+        <button class="remove-todo"><i class="fa fa-times"></i>
+        </button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
